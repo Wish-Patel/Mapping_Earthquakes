@@ -11,6 +11,9 @@ let map = L.map("mapid", {
 
 let title_url = 'https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token={accessToken}';
 
+//get data from cities.js
+let cityData = cities;
+
 // We create the tile layer that will be the background of our map.
 let streets = L.tileLayer(title_url, {
     accessToken: API_KEY,
